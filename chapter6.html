@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="component.css">
+    <title>Create Forms</title>
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+    <h1>Html: Create Forms</h1>
+    <h2>Forms</h2>
+
+    <h3>1. Text Input Forms</h3>
+    <form>
+    <input type="text" placeholder="username" name="username">
+    <input type="email" name="email" id="email" placeholder="email">
+    <textarea name="comments" id="comments" placeholder="comments"></textarea>
+    <button type="submit">Submit</button>
+    </form>
+
+    <h3>2. Radio Buttons and Checkboxes</h3>
+    <form>
+    <h3>Radio Buttons</h3>
+        <input type="radio" name="color" id="Black">Black
+        <input type="radio" name="color" id="White" checked>White
+    <h3>Checkboxes</h3>
+    <input type="checkbox" name="color" id="Black">Black
+    <input type="checkbox" name="color" id="white" checked>White
+    </form>
+
+    <h3>3. Select Box</h3>
+    <form>
+        <h4>Select Box: Single Selection</h4>
+        <select name="days-of-week" id="Week Days">
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+        <option value="thu">Thursday</option>
+        <option value="fri">Friday</option>
+        <option value="sat">Saturday</option>
+        <option value="sun">Sunday</option>
+        </select>
+    </form>
+
+    <form>
+        <h4>Select Box: Multiple Selection</h4>
+        <select name="days-of-week" id="Week-days" multiple>
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+        <option value="thu">Thursday</option>
+        <option value="fri">Friday</option>
+        <option value="sat">Saturday</option>
+        <option value="sun">Sunday</option>
+        </select>
+    </form>
+
+    <form>
+        <h4>Select Box: Grouping</h4>
+        <select name="days-of-week">
+            <optgroup label="Week Days">
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wed">Wednesday</option>
+            <option value="thu">Thursday</option>
+            <option value="fri">Friday</option>
+        </optgroup>
+        <optgroup label="Weekend">
+            <option value="sat">Saturday</option>
+            <option value="sun">Sunday</option>
+        </optgroup>
+    </select>
+    </form>
+
+    <h3>4. Add Labels</h4>
+    <form>
+        <h4>Radio Buttons</h4>
+        <input id="black" type="radio" name="Black" color="Black">
+        <label for="black">Black</label>
+        <input id="white" type="radio" name="White" color="White" checked>
+        <label for="white">White</label>
+        <h4>checkbox</h4>
+        <input id="black-check" type="checkbox" name="color" value="Black">
+        <label for="black-check">Black</label>
+        <input id="white-check" type="checkbox" name="color" value="White" checked>
+        <label for="white-check">White</label>
+    </form>
+
+    <h3>Auto Complete and Disabled</h3>
+    <form>
+    <input type="text" placeholder="username" name="username" autocomplete="off">
+    <input type="email" name="email" id="email" placeholder="email" autocomplete="off">
+    <textarea name="comments" id="comments" placeholder="comments" disabled></textarea>
+    <button type="submit" disabled>Submit</button>
+    </form>
+    <!--Back button-->
+    <div style="display: flex; justify-content: center; padding-top: 30px; padding-bottom: 80px">
+        <a href="index.html" class="btn-small">Back</a>
+        </div>
+        <!--End back button-->
+    <!--Footer-->
+    <footer>
+        <div class="btn-group">
+        <a href="chapter5.html" class="btn-previous">←</a>
+        <a href="chapter7.html" class="btn-next">→</a>
+        </div>
+        <p>HTML & CSS Introduction</p>
+        </footer>
+        <!--End footer-->
+</body>
+</html>
